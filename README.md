@@ -1,4 +1,4 @@
-# CooperaLote - Portafolio
+# CooperaLote
 **ODD Organic Drive Development - Desarrollo orgánico dirigido por objetivos con IA**
 
 **COOPERALOTE**
