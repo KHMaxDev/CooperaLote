@@ -1,64 +1,48 @@
-# Investigación regional y diagnóstico
+# Investigación regional y diagnóstico tecnológico
 
-Versión 1.0 · Corte 2026-11-04. Véase [registro de fuentes](datos_y_fuentes.md) para series, enlaces y restricciones. Este diagnóstico combina hechos oficiales con inferencias de evaluación expresamente identificadas.
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-## Contexto y lectura ejecutiva
+## Hechos y alcance
 
-Quintana Roo tiene una actividad apícola documentada: F02 reporta 2,727.78 toneladas de miel en 2023. La reducción aproximada de 20.61% frente a la referencia 2022 evidencia variabilidad interanual, sin identificar por sí sola sus causas. F04 reporta 2,900 t para 2024 con metodología menos detallada. Se usa como contexto separado, no para ajustar una tendencia predictiva.
+Las series oficiales se conservan en [datos y fuentes](datos_y_fuentes.md). Quintana Roo reporta 2,727.78 t de miel en 2023 (F02), aproximadamente 20.61% menos que la referencia redondeada 2022 (F01). Turismo 2023–2025 y población censal ilustran el contexto de las organizaciones, no demanda directa de software.
 
-El mercado turístico ofrece un canal potencial, pero F06/F07 muestran afluencia descendente en 2023–2025. Chetumal y Bacalar permiten explorar distribución próxima a la zona de arranque. No existe evidencia aportada de pedidos, contratos hoteleros o gasto de turistas en miel. El crecimiento censal 2010–2020 de 40.16% constituye contexto para explorar hogares y comercios locales, no una tasa de crecimiento comercial.
+No hay encuesta levantada, organización piloto ni disposición de pago comprobada. La necesidad de centralizar entregas, lotes e inventarios procede del planteamiento del proyecto y debe validarse. Los padrones de productores no equivalen a número de cooperativas ni a clientes pagadores.
 
 ## Variables del entorno
 
-| Variable | Señal | Mecanismo relevante | Respuesta y dato faltante |
-|---|---|---|---|
-| Producción apícola | Base productiva, con caída 2022–2023 | Disponibilidad y precio de insumo | Acuerdos por temporada; calendario por proveedor |
-| Turismo | Escala grande, contracción reciente | Demanda institucional y estacionalidad | Pedidos pagados; kg/mes por comprador |
-| Población residente | Crecimiento censal histórico | Canal doméstico potencial | Prueba comercial de proximidad |
-| Calidad y autenticidad | Riesgo planteado en el maestro | Rechazos, reputación y retiro | Muestreo, laboratorio y control de origen |
-| Conectividad rural | Sin medición específica del piloto | Capturas tardías y duplicadas | Prueba por localidad y dispositivos |
-| Clima y floración | Riesgo operativo plausible, sin serie causal analizada | Variación de suministro | Reservas y proveedores geográficamente diversos |
-| Envases y logística | Costos no cotizados | Margen, peso transportado y residuos | Comparar costo entregado por kg |
+| Variable | Efecto potencial sobre software | Evidencia necesaria |
+|---|---|---|
+| Estacionalidad apícola | Cambia frecuencia de uso y generación de registros | Calendario real de organizaciones |
+| Registros dispersos | Posible demora y duplicación | Observar tareas y errores actuales |
+| Conectividad | Afecta sincronización y soporte | Prueba con dispositivos y red de usuarios |
+| Gobernanza | Permisos y transparencia entre integrantes | Reglas de acceso y liquidación acordadas por cada organización |
+| Mercado turístico | Puede exigir evidencia de origen a productores | Entrevistas; no se traduce automáticamente en suscripciones |
+| Capacidad de pago | Determina viabilidad del servicio | Oferta y prueba comercial, no sólo interés declarado |
 
 ## FODA
 
-| Dimensión | Evaluación | Evidencia o condición |
-|---|---|---|
-| Fortaleza F1 | Integración de lote físico y costeo | Capacidad propuesta en maestro, pendiente de demostración |
-| Fortaleza F2 | Diseño de transparencia para productores | Requiere acuerdos y conciliación real |
-| Debilidad D1 | Demanda, experiencia sanitaria y costos sin validar | No hay resultados de campo aportados |
-| Debilidad D2 | Dos negocios exigen recursos distintos | Presupuesto tecnológico muy limitado |
-| Debilidad D3 | Padrones y series no plenamente reconciliados | F01–F05, sección de comparabilidad |
-| Oportunidad O1 | Oferta apícola regional existente | F02 |
-| Oportunidad O2 | Compradores turísticos y residentes | F06–F08; potencial, no ventas |
-| Amenaza A1 | Variabilidad de oferta y dependencia de proveedores | F01–F03 y modelo de acopio |
-| Amenaza A2 | Menor afluencia turística y competencia | F06/F07; competencia aún por auditar |
-| Amenaza A3 | No conformidad sanitaria o pérdida de información | Impacto crítico en continuidad |
+| Dimensión | Evaluación |
+|---|---|
+| Fortalezas propuestas | Foco en un solo producto digital; equipo de cinco; diseño orientado a trazabilidad y portabilidad. Habilidades aún por documentar |
+| Debilidades | Sin desarrollo, aliados, demanda validada ni inventario técnico completo |
+| Oportunidades | Actividad apícola documentada; potencial necesidad de mejores registros y transparencia |
+| Amenazas | Baja adopción, alternativas existentes, exposición de datos y posible no admisibilidad de rubros o categoría |
 
-### Estrategias cruzadas
-
-- FO: probar precio y recompra con trazabilidad en tres compradores, demostrando costos reales por lote.
-- DO: ejecutar el piloto en instalación evaluada y contratar asistencia especializada antes de inmovilizar inventario.
-- FA: registrar origen, calidad y entregas; mantener proveedores alternos y límites de crédito comercial.
-- DA: posponer expansión SaaS y colmenas propias hasta superar las puertas financieras y operativas.
+FO: probar el flujo con organizaciones existentes. DO: conseguir entrevistas y demostrar prototipo antes de ampliar funcionalidades. FA: ofrecer exportación, permisos y respaldo. DA: limitar compras a necesidades probadas y condicionar nuevas funciones a uso real.
 
 ## PESTEL
 
-| Factor | Oportunidad / restricción | Implicación de gestión |
-|---|---|---|
-| Político | Interés institucional en apicultura; apoyos sujetos a bases | No incluir subsidios no aprobados en caja |
-| Económico | Mercado turístico amplio y volátil; costo del insumo incierto | Segmentar hogares y B2B, probar sensibilidad de margen |
-| Social | Gobernanza cooperativa e inclusión digital | Liquidaciones verificables, lenguaje claro y capacitación presencial |
-| Tecnológico | Registro móvil y base transaccional | Captura provisional offline, respaldo y exportación portable |
-| Ecológico | Posible menor merma; empaque genera impactos | Medir materiales, energía y transporte antes de afirmar sostenibilidad |
-| Legal | Reglas de miel, higiene, etiqueta y privacidad | Expediente de cumplimiento antes de comercializar |
+| Factor | Implicación |
+|---|---|
+| Político | Apoyo sujeto a reglas y dictamen; no contabilizarlo como concedido |
+| Económico | Validar tarifa y costo de soporte por organización; los ingresos de miel no son del proyecto |
+| Social | Diseño accesible, capacitación y acuerdos de datos con usuarios |
+| Tecnológico | Seguridad, sincronización, recuperación y mantenimiento continuo |
+| Ecológico | Posible mejor información sobre pérdidas; también consumo energético y renovación de equipos |
+| Legal | Privacidad, propiedad intelectual, contratos y revisión de elegibilidad |
 
-La dimensión legal se desarrolla en [riesgos y cumplimiento](riesgos_cumplimiento.md). Las inferencias anteriores son decisiones del evaluador, no conclusiones causales de INEGI o SEDETUR.
+## Territorio y selección de usuarios
 
-## Priorización territorial
+Base del desarrollo y piloto: Chetumal. Buscar organizaciones existentes con disponibilidad para pruebas allí; residencia del equipo no demuestra que una organización tenga apiarios en la ciudad. Un eventual alcance a otros municipios debe justificarse y documentarse. La búsqueda de cinco organizaciones es meta exploratoria, no alianza actual.
 
-Se propone Othón P. Blanco/Bacalar como corredor piloto por coherencia con el maestro. Su elección definitiva exige: acceso a instalación apta, al menos cinco proveedores dispuestos, rutas de entrega con contribución positiva y compradores verificables. Felipe Carrillo Puerto/José María Morelos son zonas de vinculación, no compromisos de expansión. Registrar km por viaje, kg transportados y costo entregado; si otro corredor reduce costo integral y mantiene trazabilidad, documentar cambio mediante ADR.
-
-## Brechas de investigación
-
-Antes de G1: precios al productor, costos de laboratorio, estacionalidad, competencia por presentación, condición legal del inmueble y disposición de compra. Antes de G3: curva de recompra, costo de soporte, roturas, cobros y merma real. Para estimar productividad regional se requerirán series municipales SIAP homogéneas, información climática y mediciones de participantes y comparación; las cifras actuales no permiten una regresión causal fiable.
+Antes de comprometer compras: inventario y requerimientos. Antes de validar utilidad: entrevistas y tareas observadas. Antes de vender: costos completos, condiciones de soporte y aceptación de una oferta. La metodología de campo está en [validación](validacion_sostenibilidad.md).

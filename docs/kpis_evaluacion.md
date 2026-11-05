@@ -1,30 +1,31 @@
-# KPIs y evidencias de éxito
+# Indicadores del producto y su validación
 
-Todas las metas son propuestas. Línea base operativa: ND hasta levantar datos en M1–M3. La ausencia de actividad del proyecto no significa que los productores carezcan de producción previa.
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-| KPI | Definición | Meta | Frecuencia / responsable | Evidencia |
-|---|---|---|---|---|
-| Productores activos | Personas únicas con entrega aceptada en últimos 90 días | ≥5 al M6 | Mensual, operaciones | Acuerdo y recepción |
-| Trazabilidad completa | Lotes vendidos con expediente completo / lotes vendidos | 100% desde primera venta | Por lote, calidad | Origen, pesajes, proceso, liberación y salida |
-| Merma de proceso | kg perdidos documentados / kg aceptados procesados | ≤2% en 3 lotes consecutivos al M6 | Por lote, producción | Pesajes y clasificación de salidas |
-| Diferencia de inventario | Valor absoluto de kg físicos−kg registrados / kg registrados | ≤1% por cierre, 100% de diferencias investigadas | Semanal, almacén | Conteo firmado; si denominador cero reportar kg absolutos |
-| Contribución por canal | (Ventas netas−costos variables completos)/ventas netas | ≥25% por 2 meses al M6 | Mensual, finanzas | Costeo y comprobantes |
-| Compradores recurrentes | Clientes con ≥2 compras pagadas | ≥3 al M6 | Mensual, comercial | Ventas y banco |
-| Cobertura de caja | Caja libre / egresos comprometidos próximos 30 días | ≥1 antes de nuevas compras | Semanal, administración | Flujo y vencimientos |
-| Puntualidad de pago | Liquidaciones pagadas en plazo / vencidas del periodo | 100% | Mensual, administración | Acuerdo, liquidación y pago |
-| Adopción | Usuarios asignados con ≥1 operación válida semanal / asignados | ≥80% al M4 | Semanal, tecnología | Bitácora, sin contar simples accesos |
-| Retiro simulado | Tiempo hasta identificar origen, existencias y destinatarios | ≤2 horas al M4 | Trimestral, calidad | Acta y lista de lotes descendientes |
-| Empaque | g totales de material consumido / kg netos vendidos | −10% al M12 contra M3 | Mensual, producción | Pesaje, compras, roturas y retornos |
-| Energía | kWh atribuibles al proceso / kg liberados | Línea base M3, meta al G3 | Mensual, producción | Medidor o método de asignación explícito |
+## Línea base
 
-No dividir entre cero. Publicar muestra y faltantes. Una merma baja con pérdidas sin registrar no es éxito. El KPI de empaque debe mantener inocuidad y roturas dentro del umbral definido por calidad.
+Software, prototipo, usuarios reales y organizaciones confirmadas: cero al corte según el equipo. Línea base de tareas y resultados productivos de posibles usuarios: no disponible. El valor cero de usuarios no significa ausencia de actividad apícola regional.
 
-## Evaluación de resultados
+| Indicador | Fórmula / evidencia | Meta propuesta y plazo |
+|---|---|---|
+| Prototipo | Flujo completo demostrado y límites identificados | 1 antes de la presentación |
+| Organizaciones entrevistadas | Entrevistas únicas documentadas | 5 al M2; muestra exploratoria |
+| Organización de prueba | Acuerdo voluntario firmado, no carta de interés | 1 al M2, sujeta a reclutamiento |
+| Casos críticos | Casos aprobados / ejecutados; conservar también total planificado | 100% antes de datos reales; no reducir la lista para aparentar aprobación |
+| Sesiones de usabilidad | Sesiones con perfil y consentimiento documentados | ≥5 al M4; separar internas y usuarios objetivo |
+| Éxito de tarea | Tareas completadas sin ayuda / intentadas | ≥80% en última ronda; muestra y fallos visibles |
+| Integridad de expedientes | Lotes elegibles con origen y movimientos completos / lotes elegibles registrados | ≥95% al M6, si hay datos reales autorizados |
+| Adopción | Usuarios habilitados con operación válida semanal / habilitados | ≥80% durante 4 semanas del piloto, si existe participante |
+| Tiempo de rastreo | Mediana de minutos para tarea equivalente antes/después | Reducción objetivo 30% al M6; línea base previa indispensable |
+| Respaldo | Restauraciones completas aprobadas / programadas | 100% mensual; RPO ≤24 h, RTO ≤8 h como objetivos |
+| Validación comercial | Oferta, aceptación y cobro por separado | Evaluar al M6; no declarar ingreso por interés verbal |
 
-Primera etapa: seguimiento antes/después en los mismos participantes, comparando meses equivalentes por cosecha y presentación. Medir costo/kg, merma, plazo de pago e ingreso neto del productor; distinguir efecto de precio de efecto de eficiencia. No extrapolar esta muestra intencional al padrón estatal.
+Responsables: coordinación consolida; calidad registra pruebas; investigación mide tareas; tecnología verifica continuidad. Reportar ND si falta denominador o datos reales. Los datos sintéticos nunca se suman a adopción ni volumen regional.
 
-Segunda etapa, si hay suficientes datos: seleccionar un grupo de comparación con municipio, escala y calendario similares. Estimar diferencia de diferencias: (resultado participantes después−antes)−(comparación después−antes). Revisar tendencias previas, exposición a clima, cambios de comprador y pérdidas de seguimiento. Si no se sostienen supuestos, reportar asociación y no causalidad.
+## Evaluación
 
-## Expediente mensual
+Comparar la misma tarea con complejidad y usuario similares. Reportar tamaño de muestra, capacitación recibida y efecto de aprendizaje. Una prueba antes/después pequeña no prueba causalidad regional. Para evaluar mermas o materiales, la organización deberá proporcionar mediciones físicas comparables y autorizar su uso. No se mantiene la meta anterior de merma ≤2% como resultado controlable por el equipo de software.
 
-Incluir exportación de movimientos, arqueo físico, conciliación bancaria, registro de calidad, incidencias, cambios de definición y tablero firmado. La asamblea recibe cifras agregadas; los datos individuales permanecen restringidos. Un evaluador debe poder reproducir cada indicador sin depender del discurso comercial.
+## Evidencia mensual
+
+Versión desplegada, casos de prueba, bitácoras anonimizadas, acuerdos, sesiones, fallos, horas aportadas y gasto por entregable. Los indicadores publicados serán agregados. Revisar costo de soporte antes de ofrecer suscripciones sostenibles.

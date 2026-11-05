@@ -1,6 +1,6 @@
 # Datos, fuentes y trazabilidad
 
-Versión 1.0 · Consulta: 2026-11-04. Responsable propuesto: analista de datos. Los identificadores F01–F12 permiten rastrear cifras entre documentos. Se consultaron fuentes oficiales; no se realizó encuesta ni visita de campo.
+Versión 2.0 · Consulta: 2026-11-04. Responsable propuesto: analista de datos. Los identificadores F01–F12 permiten rastrear cifras entre documentos. Se consultaron fuentes oficiales; no se realizó encuesta ni visita de campo.
 
 ## Registro de fuentes
 
@@ -49,17 +49,22 @@ Unidad: afluencia estimada de turistas, enero–diciembre; no personas únicas n
 
 Fuente F08. No extrapolar automáticamente a 2026; el crecimiento demográfico no estima consumo, ingreso ni disposición de pago.
 
-## Reconciliación con el documento maestro
+## Reconciliación de alcance y fuentes del proyecto
 
-| Elemento del maestro | Tratamiento en este plan |
+Las cifras regionales anteriores son contexto, no demanda demostrada de software. No hay aliados, clientes ni desarrollo iniciado. Cinco integrantes y laptops de inventario no especificado son información comunicada por el equipo, no una estadística oficial.
+
+| Referencia anterior | Tratamiento en versión 2.0 |
 |---|---|
-| 848 productores y 32,036 colmenas sin fecha homogénea | No usados para tasas de productividad ni cobertura. F05 contiene otro padrón y otra cantidad de colmenas |
-| 2,727.78 t como referencia sin año explícito | Se ubica en cierre 2023 mediante F02 |
-| 12 centros de acopio, 4 operando | Antecedente del maestro no revalidado; no presupuestar su disponibilidad |
-| ENDUTIH 2025: 88.9%, 75.2% y 84.6% | No se reutilizan sin validar publicación y universo. Se propone medición local |
-| $45,000 / $60,000 / $95,000 | Hipótesis presupuestales, no cotizaciones ni recursos aprobados |
-| Costo $61 y contribución $29 | Ejemplo condicionado a clasificar los $61 como variables y evitar doble conteo de indirectos |
-| IESSOL, ley estatal, SITMA y denominación de origen | Validaciones pendientes específicas; no derechos ni elegibilidad acreditados |
+| Productores y colmenas con padrones distintos | No usar para calcular número de organizaciones compradoras |
+| 12 centros de acopio, cuatro operando | Antecedente no revalidado; no tratarlos como aliados disponibles |
+| ENDUTIH 2025 del maestro anterior | No reutilizar cifras no verificadas; medir conectividad de usuarios |
+| Presupuesto base $60,000 y margen por frasco | Sustituidos por presupuesto tecnológico propuesto de $95,000; no extrapolar resultados previos |
+| Metas de miel procesada y merma | Sustituidas por adopción y cobertura documental; impacto físico por medir con usuarios |
+| F09–F11 | Contexto de obligaciones de operadores alimentarios, no acreditación del software |
+
+F13: [convocatoria aportada](../convocatoria_potencializacion_de_esfuerzos.md), leída en esta revisión. F14: [portal oficial del programa](https://sebien.qroo.gob.mx/potencializacion/), índice localizado; apertura directa falló (502). Reglas y anexos no cotejados íntegramente. Véase [expediente](convocatoria_y_expediente.md).
+
+Los importes de finanzas son topes de planificación, no cotizaciones. Los escenarios del modelo no son estadísticas oficiales. No se han contactado organizaciones ni realizado encuestas en esta revisión.
 
 ## Protocolo de actualización
 

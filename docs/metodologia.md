@@ -1,37 +1,40 @@
-# Metodología de ejecución y gobernanza
+# Metodología, cronograma y equipo de cinco integrantes
 
-## Enfoque
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-Combinar evaluación por puertas de decisión con ciclos de trabajo de dos semanas. La operación alimentaria exige controles previos a venta; los ciclos de software no pueden omitirlos. Cada ciclo entrega una capacidad verificable y un registro de evidencia, no sólo tareas completadas.
+## Organización propuesta
 
-## Ciclos y entregables
-
-| Ciclo | Trabajo | Criterio de cierre |
+| Rol provisional | Responsabilidad principal | Evidencia |
 |---|---|---|
-| 1–2 | Problema, entrevistas, línea base y roles | Datos de campo con consentimiento y trazabilidad |
-| 3–4 | Cotizaciones, acuerdos y prototipo | G1 con suministro, pedidos y presupuesto financiado |
-| 5–6 | Instalación, procedimientos, lotes de prueba y MVP | G2, sin hallazgos críticos abiertos |
-| 7–10 | Venta piloto y seguimiento semanal | Conciliación de inventarios, cobros y quejas |
-| 11–12 | Evaluación de seis meses | G3 con recomendación de continuar, corregir o detener |
+| Integrante 1 | Coordinación, requisitos y expediente | Backlog, decisiones, requisitos y control de recursos |
+| Integrante 2 | Backend y modelo de datos | API, migraciones y pruebas de reglas |
+| Integrante 3 | Interfaz y experiencia de usuario | Prototipo, formularios y accesibilidad |
+| Integrante 4 | Calidad, seguridad y despliegue | Pruebas, respaldo y registro de liberaciones |
+| Integrante 5 | Investigación, documentación y capacitación | Contactos, sesiones, manual y evaluación |
 
-M1 inicia en diciembre 2026; si la financiación se retrasa, mover el calendario completo y preservar las dependencias. No adelantar ventas para cumplir una fecha.
+Asignaciones por confirmar con nombres, habilidades y horas disponibles. Todos pueden colaborar en programación; evitar que una sola persona apruebe su código o su compra. Sin remuneración con el apoyo. Formalizar autoría, licencias, propiedad del código y continuidad si alguien sale.
 
-## Responsabilidades
+## Etapa previa al apoyo
 
-Dirección responde por alcance y presupuesto; comercial por pedidos y recompras; producción por pesajes y procesos; calidad por liberación y retiro; administración por caja y liquidaciones; tecnología por seguridad y soporte; analista por definiciones y evaluaciones. En equipo pequeño pueden acumularse funciones, pero quien prepara una liquidación no será su único aprobador. Registrar sustitutos.
+Al corte no hay código ni prototipo. Preparar inventario de recursos, expediente y demostración utilizando laptops actuales. El prototipo previo es una exigencia comunicada por el equipo; no se atribuye como requisito textual de la convocatoria transcrita. Su alcance se define en [prototipo](prototipo.md).
 
-## Cadencia
+La convocatoria aportada indica cierre de entrega el 13 de noviembre de 2026 y presentación ante consejo en fecha por notificar. Objetivo interno: expediente revisado antes del cierre y prototipo preparado antes de la presentación. No confundir ambos plazos ni inventar fecha de consejo.
 
-Reunión operativa semanal de 30 minutos con inventario, lotes retenidos y cobros. Revisión quincenal con demostración del software y prueba por usuarios. Cierre mensual de caja, resultados por canal, evidencias ambientales y riesgos. Comité G1/G2/G3 documenta decisión, condiciones, responsable y fecha de revisión.
+## Piloto tecnológico de seis meses en Chetumal
 
-## Definición de terminado
+| Periodo relativo | Entregable | Puerta de decisión |
+|---|---|---|
+| M1 | Requisitos, inventario, compras justificadas y arquitectura | G1: conceptos permitidos, cotizaciones y disponibilidad de recursos |
+| M2 | Contacto con cinco organizaciones candidatas y MVP inicial | G2: procurar un acuerdo de prueba; no afirmar participante hasta formalizarlo |
+| M3 | Entregas, lotes, inventario, roles y exportación | Casos críticos técnicos aprobados con datos de prueba |
+| M4 | Cinco sesiones objetivo y mejoras de usabilidad | Distinguir perfiles reales de pruebas internas; aceptar S05 por evidencia |
+| M5 | Revisión de seguridad, correcciones y restauración | G3: sin fallos críticos abiertos antes de datos reales |
+| M6 | Piloto con organización si acepta, capacitación y evaluación | G4: decidir continuidad con resultados, costos y disposición de pago |
 
-Un procedimiento está terminado cuando tiene responsable, versión, capacitación y evidencia de ejecución. Un módulo está terminado cuando permite ejecutar el caso operativo, deniega accesos indebidos, conserva bitácora y puede restaurarse. Una venta validada tiene entrega y cobro conciliado. Un indicador está listo cuando puede recalcularse desde datos originales.
+M1 se cuenta desde recursos disponibles y ejecución autorizada; ajustar calendario al convenio. Si no se consigue organización, continuar pruebas sintéticas y documentar que la validación comercial sigue pendiente. No fabricar registros reales para cumplir metas.
 
-## Gestión documental
+## Ciclo de trabajo
 
-Archivo raíz dirige la lectura; anexos especializan contenidos. Documentos de planeación versión 1.0 al 2026-11-04. Mantener fecha, autor, estado, fuente y cambios por versión. Separar documentos públicos, evidencias internas y datos personales. Nunca guardar claves, resultados individuales de encuesta o domicilios en repositorios públicos. Conservar expediente de cada lote y control de accesos conforme a política legal validada.
+Iteraciones de dos semanas, reunión semanal y demostración quincenal. Cada tarea requiere criterio de aceptación, revisión cruzada y evidencia. Una función está terminada al cumplir reglas, permisos, pruebas, documentación y posibilidad de recuperación. Un prototipo visual no equivale a función productiva.
 
-## Evaluación y aprendizaje
-
-Revisar supuestos que resulten falsos sin ocultar desvíos. Comparar cohortes y periodos equivalentes; etiquetar sesgo de selección. La medición de tres lotes es una línea base operativa pequeña, no prueba estadística del efecto estatal. La evaluación ampliada se describe en [KPIs](kpis_evaluacion.md) y [modelo](modelo_predictivo.md).
+Mensualmente revisar gastos contra entregables, horas aportadas, riesgos y KPIs. Separar decisiones del equipo de autorizaciones de la institución. Antes de cobrar, definir condiciones del servicio y soporte sostenible.

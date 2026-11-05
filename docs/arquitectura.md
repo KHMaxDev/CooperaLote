@@ -1,64 +1,52 @@
-# Arquitectura operativa y tecnológica
+# Arquitectura del producto de software
 
-Versión 1.0 · Diseño propuesto, no sistema implementado.
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-## Cadena operativa y responsabilidades
+## Límites de responsabilidad
 
-1. Comercial acuerda volumen, precio, condiciones de calidad y pago con cada productor.
-2. Recepción registra pesaje neto, recipiente, proveedor, fecha y muestra; asigna estado de cuarentena.
-3. Calidad verifica criterios del procedimiento y resultados requeridos; acepta, rechaza o mantiene retenido. Producción no puede liberar su propio lote sin revisión.
-4. Producción acondiciona únicamente lotes autorizados, documenta parámetros del proceso, mezclas, fraccionamiento y mermas.
-5. Envasado identifica lote, cantidad, material, etiqueta y unidades; calidad autoriza venta.
-6. Almacén registra entradas/salidas y ventas por lote. Administración concilia cobros y liquidaciones.
-7. Ante incidencia, calidad bloquea lotes y descendientes, identifica compradores y ejecuta retiro documentado.
+CooperaLote desarrolla, despliega y mantiene el software. Las organizaciones usuarias producen, compran, procesan y venden miel; sus responsables registran calidad y autorizan movimientos. El sistema almacena evidencia y aplica permisos, sin emitir certificaciones ni ordenar pagos bancarios. No existe organización piloto confirmada.
 
-Separar físicamente recepción/cuarentena, proceso, material limpio, producto liberado y devoluciones. Evaluar flujos sanitarios y almacenamiento antes de comprar equipo. No se fija una receta térmica genérica: el responsable técnico valida el proceso para conservar especificaciones.
-
-## Arquitectura lógica
+## Capas y módulos
 
 ```mermaid
 flowchart LR
-  A[Captura móvil y web] --> B[API y autorización]
+  A[Aplicación web móvil] --> B[API y autorización]
   A --> C[Cola local provisional]
   C --> B
-  B --> D[Entregas y genealogía de lotes]
-  B --> E[Inventario y costos]
-  B --> F[Ventas y liquidaciones]
+  B --> D[Organizaciones y productores]
+  B --> E[Entregas lotes e inventarios]
+  B --> F[Auditoría y exportación]
   D --> G[(PostgreSQL)]
   E --> G
   F --> G
   B --> H[Documentos privados]
-  G --> I[Vista pública mínima por QR]
-  G --> J[Respaldo y exportaciones]
+  G --> I[Consulta pública mínima QR]
+  G --> J[Respaldo independiente]
 ```
 
-Monolito modular con una API y una base relacional. Iniciar con una organización y diseñar claves de organización desde el primer día. La incorporación de terceros queda condicionada a pruebas de aislamiento. La consulta QR será de sólo lectura y contendrá producto, lote, municipio general, envasado y estado público autorizado.
+Monolito modular propuesto. Prototipo: navegación del flujo esencial con datos sintéticos y límites visibles. MVP: persistencia, permisos, validación, auditoría y exportación. Fase posterior: costos, ventas y cálculo de liquidaciones de los usuarios, si su necesidad se confirma. No se desarrolla integración bancaria ni fiscal en el MVP.
 
-## Modelo mínimo de datos
-
-| Entidad | Campos esenciales | Regla |
+| Entidad | Campos / relación | Regla |
 |---|---|---|
-| Organización/usuario | ID, rol, estado, organización | Autorización en servidor, nunca confiar en ID enviado por cliente |
-| Productor/entrega | ID, organización, kg netos, fecha, precio, comprobante | Entrega inmutable tras conciliación, correcciones mediante ajuste |
-| Lote/origen | ID, estado, entregas o lotes padres, kg aportados | Relación muchos a muchos con cantidades; impedir ciclos |
-| Movimiento | ID, lote, tipo, kg, documento, responsable | Transacción atómica; no existencias negativas |
-| Calidad | muestra, resultado, método, dictamen, firmante | Un lote retenido no puede venderse |
-| Venta/cobro | comprador, unidades, lote, precio, vencimiento, pago | Venta y cobro son eventos diferentes |
-| Liquidación | productor, base, anticipos, ajustes, saldo | Dos personas revisan los pagos; saldo conciliado |
-| Evidencia/auditoría | actor, fecha, evento, referencia, versión | Acceso restringido y retención definida |
+| Organización/usuario | ID, organización, rol y estado | Contexto de organización validado por servidor |
+| Productor/entrega | Identificador, fecha, kg y documento | Datos mínimos, decimales; ajuste trazable tras confirmar |
+| Lote/origen | Padres, aportaciones en kg, estado | Genealogía muchos a muchos; impedir ciclos y doble conteo |
+| Movimiento | Lote, tipo, cantidad, actor y comprobante | Transacción atómica; impedir stock negativo |
+| Evidencia | Tipo, fecha, autor y archivo privado | Dictamen pertenece al operador responsable, no al software |
+| Evento de auditoría | Actor, hora, operación y referencia | Historial de cambios y ajustes autorizado |
 
-Usar decimales para kg y dinero. Balance: kg aceptados = kg liberados + merma documentada + existencias en proceso + muestras/otras salidas justificadas. La diferencia sin explicación es discrepancia, no merma automática. Inventario de producto terminado se concilia aparte de materia prima.
+Balance de la organización: entradas = salidas + pérdidas documentadas + existencias, por periodo y unidad coherentes. Una discrepancia sin explicación no se transforma automáticamente en merma. Los volúmenes de lotes padres e hijos no se suman como nueva producción.
 
-## Captura sin conexión
+## Seguridad y conectividad
 
-Cada operación provisional recibe UUID e identificador de dispositivo. La API usa clave idempotente por organización; repetir envío no duplica entrega. Al sincronizar se revalida usuario, permisos, estado del lote y versión. Conflictos se envían a revisión; nunca aplicar “último cambio gana” a pagos, stock o liberación. Mostrar claramente pendientes y rechazados. Minimizar datos personales locales y purgar al cerrar sesión; la conectividad y almacenamiento del dispositivo deben probarse en campo.
+Permisos por organización y rol, sesión segura, TLS, protección CSRF, límites de solicitudes, secretos fuera del repositorio y archivos privados. Vista QR sólo con identificador público, producto y procedencia general autorizada, sin domicilios ni teléfonos de productores. Pruebas con dos organizaciones ficticias antes de alta real; el filtro de interfaz no basta.
 
-## Seguridad y continuidad propuestas
+PostgreSQL permite políticas por fila como defensa adicional. Usar rol de aplicación sin propiedad de tablas ni BYPASSRLS; pruebas de aislamiento deben abarcar API, archivos, exportaciones y tareas de fondo. Véase [tecnologías](tecnologias.md).
 
-Autenticación por sesión segura para la aplicación propia, permisos por rol y organización, TLS, límites de solicitudes, documentos privados con enlaces temporales y bitácora. Aplicar políticas de fila como defensa adicional; el rol de aplicación no será propietario ni tendrá privilegios que evadan las políticas. Separar secretos del repositorio.
+Captura offline: UUID e idempotencia por organización, cola pendiente/rechazada/confirmada y revalidación al sincronizar. Conflictos de stock se revisan, no se resuelven con el último cambio. No almacenar datos sensibles innecesarios en dispositivos compartidos. Probar pérdida de conexión y repetición del envío.
 
-Objetivos de servicio piloto: RPO ≤24 horas y RTO ≤8 horas, sujetos a prueba mensual de restauración. Respaldo cifrado diario en ubicación independiente; verificar recuperación de documentos junto con la base. Usar formularios numerados en contingencia y conciliarlos al reabrir. Meta de disponibilidad inicial 99% mensual, excluyendo mantenimiento acordado, sin prometer SLA comercial antes de medirlo.
+## Continuidad y aceptación
 
-## Criterios de aceptación
+Objetivos propuestos: RPO de 24 horas y RTO de 8 horas, demostrados mediante restauración mensual antes de comprometer un SLA. Separar desarrollo, pruebas y piloto; nunca reutilizar datos personales reales en demostraciones públicas.
 
-Demostrar genealogía completa al mezclar/fraccionar, retiro de descendientes, bloqueo de lote retenido, repetición de envío sin duplicados, acceso cruzado denegado y restauración funcional. Exportar los datos de una organización en formato portable. La aplicación complementa, pero no sustituye, registros oficiales, contabilidad o dictámenes sanitarios.
+Antes de piloto real: validar aislamiento, restauración, genealogía, bloqueo de operaciones no autorizadas, exportación y sincronización. Una prueba simulada aprobada acredita comportamiento técnico, no adopción ni mejora productiva real.

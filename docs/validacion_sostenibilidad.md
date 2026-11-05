@@ -1,36 +1,30 @@
-# Validación comercial y sostenibilidad
+# Validación con organizaciones y sostenibilidad
 
-## Investigación de campo propuesta
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-Muestra exploratoria por conveniencia con cuotas territoriales: 30 productores distribuidos entre Othón P. Blanco, Bacalar, Felipe Carrillo Puerto y José María Morelos, según acceso; 10 compradores entre hoteles, restaurantes y comercios; 50 consumidores de proximidad. No es estadísticamente representativa. Registrar invitaciones, respuestas y rechazos; no fabricar entrevistas faltantes.
+## Reclutamiento y estado
 
-Para productores: volumen por cosecha, precio realmente recibido, costos, rechazos, tiempos de pago, forma de registro, capacidad de entrega y conectividad. Para compradores: kg/mes, presentación, precio neto entregado, calidad exigida, crédito, devoluciones y requisitos de proveedor. Para consumidores: última compra, precio pagado, frecuencia y prueba de elección entre presentaciones reales, evitando preguntas que induzcan aprobación.
+No existen aliados, convenios ni clientes confirmados. Se propone contactar organizaciones apícolas existentes para realizar cinco entrevistas exploratorias y procurar un acuerdo de prueba en Chetumal. La participación es voluntaria; no enviar mensajes en nombre del equipo ni usar datos sin autorización.
 
-Documentar consentimiento, código anónimo y evidencia permitida. No publicar información comercial individual. Registrar compromisos como interés, carta de intención, pedido, entrega o cobro; son etapas distintas.
+Registrar candidato, fecha, contacto autorizado, necesidad, interés, aceptación y acuerdo; cada etapa es diferente. No confundir los cinco integrantes desarrolladores con cinco organizaciones usuarias.
 
-## Prueba comercial
+## Investigación y prueba
 
-Comparar al menos dos canales con precio entregado, costo del canal y plazo de cobro. Un piloto exitoso exige repetición pagada, no sólo satisfacción declarada. Priorizar pedidos pequeños antes de comprar inventario. Calcular contribución por kg incluyendo envase, mano de obra, merma, ruta, comisión y devoluciones. Si no alcanza 25%, ajustar precio, canal o proceso antes de ampliar volumen.
+Preguntar cómo registran entregas, rastrean lotes, concilian inventario y preparan liquidaciones; cuánto tiempo requieren; qué errores detectan; qué dispositivos y conexión usan; quién compra software y qué presupuesto podría aprobar. Observar una tarea con autorización. Evitar preguntas que presupongan utilidad o ahorro.
 
-Revisar al menos cinco alternativas competidoras documentando fecha, presentación, precio/kg, origen declarado, entrega y condiciones. No se aportan rankings de competidores sin investigación directa.
+Comparar hojas de cálculo y al menos dos soluciones disponibles por funcionalidad, costo total, exportación, conectividad y soporte, sin inventar resultados. Documentar fecha y versión. Para validar pago, presentar una oferta concreta después de conocer costos y registrar aceptación y cobro separadamente.
 
-## Sostenibilidad medible
+Cinco sesiones de usabilidad son una meta formativa, no muestra representativa. Si no hay organización piloto, usar participantes con perfil pertinente cuando sea posible y declarar su relación real con el sector. Las pruebas internas sólo validan aspectos técnicos.
 
-| Dimensión | Línea base y acción | Evidencia / límite |
+## Contribución sostenible propuesta
+
+| Mecanismo | Medición requerida | Límite |
 |---|---|---|
-| Material alimentario | Pesar materiales de primeras 3 corridas; reducir gramos por kg | No comprometer inocuidad para reducir empaque |
-| Merma | Separar pérdida real de muestras y existencias | Meta 2%; comparar mismos tipos de proceso |
-| Energía | Medir kWh y kg liberados | Sin estimar emisiones hasta tener factores y límites definidos |
-| Transporte | Registrar km, carga y entregas por ruta | Consolidación de pedidos; comparar costo y consumo medidos |
-| Retorno de envases | Evaluar logística y sanitización antes de ofrecerlo | Retorno no equivale automáticamente a menor impacto ambiental |
-| Prácticas de origen | Registrar manejo y asistencia técnica declarada | Verificación por personal competente; registro no es certificación |
-| Inclusión | Horas de formación, asistencia y tareas completadas | Desagregar voluntariamente sin exponer datos personales |
-| Equidad económica | Precio neto, plazos y reclamaciones por productor | No prometer ingreso mayor sin comparar costos e ingreso previo |
+| Información de pérdidas | Discrepancias y pérdidas físicas separadas, antes/después | Mejor registro puede elevar pérdidas reportadas sin empeorar proceso |
+| Transparencia | Tiempo de consulta y conciliación, acceso por rol | No asegura mayor ingreso o distribución justa por sí solo |
+| Menos registros repetidos | Número de capturas duplicadas y tiempo | No convertirlo en emisiones evitadas sin análisis |
+| Portabilidad | Exportación completa y restauración | Reduce dependencia; probar que los datos sean utilizables |
+| Uso responsable de equipos | Reutilización, reparación y vida útil | Nuevos equipos también tienen impacto ambiental |
+| Formación | Sesiones, tareas completadas y dificultades | Asistencia no equivale a adopción |
 
-## Criterios de comunicación
-
-Usar “procedencia documentada” sólo cuando exista expediente. Usar “meta de reducción” para objetivos futuros. No declarar “sostenible”, “orgánica”, “libre de contaminantes”, “carbono neutral” o “protege biodiversidad” como resultados acreditados sin verificación adecuada. La conservación del entorno exige acciones y mediciones adicionales al software.
-
-## Plantilla mínima de evidencia
-
-ID, fecha, municipio, participante anonimizado, tipo de evidencia, pregunta o proceso, valor, unidad, documento de respaldo, responsable, calidad del dato, autorización de uso y siguiente acción. Los archivos de datos personales se guardan separados del paquete público.
+El equipo mantendrá el propósito de apoyar bienes de consumo sostenibles, mostrando qué decisiones permite mejorar el software. No se declara miel orgánica, neutralidad de carbono o aumento de biodiversidad. La sostenibilidad económica requiere ingresos que cubran operación y trabajo a largo plazo; el aporte inicial de trabajo no debe ocultar ese costo.

@@ -1,22 +1,24 @@
 # Registro de decisiones estratégicas y técnicas
 
-Fecha: 2026-11-04. Estado general: propuestas del evaluador para ratificación en G1. No se documentan aquí aprobaciones del usuario o de instituciones.
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-| ID | Decisión y razón | Alternativa descartada por ahora | Consecuencia / condición de revisión |
-|---|---|---|---|
-| ADR-01 | Acopiar y envasar miel de aliados; permite validar mercado | Colmenas propias | Dependencia de suministro; revisar tras 12 meses de ventas |
-| ADR-02 | Piloto de 6 meses con puertas de inversión | Despliegue estatal inmediato | Menor alcance inicial; ampliar sólo con caja y recompra |
-| ADR-03 | 500 g como hipótesis inicial | Lanzar todas las presentaciones | Menos inventarios; cambiar con pedidos y margen por canal |
-| ADR-04 | Monolito Laravel/Vue/PostgreSQL, consistente con maestro | Microservicios | Menos complejidad operativa; revisar si capacidad medida lo exige |
-| ADR-05 | Una organización piloto con claves de organización desde inicio | SaaS comercial multiempresa desde el primer mes | Menor carga de soporte; alta de terceros tras pruebas de aislamiento |
-| ADR-06 | Capturas offline provisionales e idempotencia | Confirmación financiera offline | Requiere conectividad para cerrar; evita doble pago |
-| ADR-07 | Genealogía relacional de lotes y comprobantes | Blockchain | Menor costo; autenticidad sigue dependiendo de inspección física |
-| ADR-08 | No financiar operación con ingresos SaaS supuestos | Incluir suscripciones no contratadas | Flujo conservador; incorporar sólo contratos y cobros verificables |
-| ADR-09 | Modelo de escenarios de merma y cobertura | Regresión con tres observaciones heterogéneas | Proyección condicional; recalibrar con 12 meses de microdatos |
-| ADR-10 | Referencia regional fija 2023 para dimensionar | Presentar denominador 2023 como producción futura | Evita falsa precisión; actualizar a cierre homologado antes de evaluación final |
-| ADR-11 | Sostenibilidad por indicadores físicos medidos | Etiquetas “orgánico” o “carbono neutral” sin evidencia | Requiere línea base ambiental y revisión de declaraciones |
-| ADR-12 | Mantener presupuesto B como antecedente y exponer brecha | Afirmar que $60,000 cubren operación anual | Condicionar arranque a costos completos y capital comprometido |
+La reorientación a software, organizaciones existentes y equipamiento/servicios fue aprobada por el equipo en la conversación. Las siguientes especificaciones y cantidades son propuestas de ejecución, no aprobación institucional.
 
-## Formato para decisiones futuras
+| ID | Decisión | Justificación / condición de revisión |
+|---|---|---|
+| ADR-01 | Desarrollar software para organizaciones apícolas existentes | El equipo no adquiere ni procesa miel; no hay aliados confirmados |
+| ADR-02 | Piloto tecnológico de seis meses en Chetumal | Comienza con recursos y autorización; adaptar a plazos oficiales; conseguir participante es un hito pendiente |
+| ADR-03 | MVP de productores, entregas, lotes, inventario y QR | Validar tareas antes de ampliar; las presentaciones de miel las define cada organización |
+| ADR-04 | Monolito modular Laravel/Vue/PostgreSQL | Propuesta coherente con antecedentes, sujeta a competencias y mantenimiento |
+| ADR-05 | Diseñar aislamiento entre organizaciones desde el inicio | Probar con dos organizaciones ficticias; iniciar uso real con una si acepta |
+| ADR-06 | Captura offline provisional con idempotencia | Servidor valida permisos, conflictos y estados; prototipo no simula como real una sincronización no implementada |
+| ADR-07 | Genealogía relacional y evidencia documental | Evita complejidad de blockchain; los registros requieren verificación de origen |
+| ADR-08 | Evaluar suscripción y servicios de implementación | No registrar ingresos sin clientes ni confundir ventas de miel de usuarios con ingresos del proyecto |
+| ADR-09 | Proyectar adopción, tiempo administrativo y cobertura documental | Sin atribuir cosecha adicional ni reducción automática de merma |
+| ADR-10 | Mantener datos regionales como contexto | No convertir padrón de productores en número de organizaciones compradoras |
+| ADR-11 | Medir contribución a sostenibilidad con usuarios | Sin certificaciones ambientales ni beneficios cuantificados aún |
+| ADR-12 | Solicitar $95,000 exclusivamente para equipamiento y servicios | Cotizaciones, inventario y elegibilidad determinan asignación final; sin pago a integrantes |
+| ADR-13 | Preparar prototipo previo a presentación con recursos existentes | No depender de un apoyo todavía no recibido para mostrar el producto |
+| ADR-14 | Verificar encuadre A frente a alternativa C | Conservar propósito; confirmar con reglas/Anexo 2B e instancia competente |
 
-Registrar ID, fecha, problema, opciones, evidencia, responsable que propone, órgano que autoriza, costo, reversibilidad, impacto, condición de revisión y enlace al acta. Dirección propone inversiones; calidad tiene facultad de bloquear producto; administración valida caja. Todo cambio de meta o fuente requiere nueva versión y explicación, preservando la anterior.
+Cada cambio futuro registrará fecha, evidencia, alternativa, costo, responsable, autorización y condición de revisión. El monto máximo de apoyo no justifica por sí solo cada gasto.

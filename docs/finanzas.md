@@ -1,61 +1,69 @@
-# Finanzas, escenarios y liquidez
+# Presupuesto tecnológico y sostenibilidad financiera
 
-Modelo ilustrativo en MXN, sin cotizaciones ni compromisos de financiación. No constituye valoración de inversión ni pronóstico de rentabilidad. Debe sustituirse por datos contratados antes de G1.
+Versión 2.0 · 4 de noviembre de 2026 · Alcance tecnológico aprobado por el equipo. Metas, adquisiciones y servicios todavía sujetos a validación.
 
-## Revisión del presupuesto maestro
+## Alcance y clasificación
 
-| Concepto, escenario B | MXN |
-|---|---:|
-| Equipo | 17,000 |
-| Recipientes y almacenamiento | 7,000 |
-| Báscula y control | 4,000 |
-| Envases y etiquetas | 7,000 |
-| Higiene | 3,000 |
-| Tecnología | 8,000 |
-| Comercialización | 4,000 |
-| Capital de trabajo | 10,000 |
-| Total | 60,000 |
+Solicitud objetivo: **$95,000 MXN** para cinco integrantes. Todo el apoyo se destinará a equipamiento y servicios del producto. Sin remuneraciones a integrantes, miel, envases, maquinaria alimentaria ni capital para inventario apícola. Los cálculos previos de margen por frasco, ventas de miel y brecha de $17,500 dejan de aplicar al proyecto.
 
-El subtotal de arranque excluyendo capital de trabajo es $50,000. No todo es activo fijo: incluye gastos e inventarios. Obtener cotizaciones con impuestos, envío, instalación y vigencia. Faltan importes acreditados para renta, adecuación, laboratorio, permisos, contabilidad, remuneración completa, seguridad social, transporte, mermas, crédito a compradores, soporte y contingencia. El presupuesto original no permite afirmar viabilidad financiera.
+Los valores siguientes son **topes internos ilustrativos para preparar cotizaciones**, no precios investigados, ofertas comerciales ni rubros cuya elegibilidad esté confirmada. Se expresan como desembolsos finales objetivo, incluidos impuestos y envío cuando correspondan; el desglose fiscal lo dará cada proveedor. No son una orden de compra ni presupuesto final para presentar sin evidencia.
 
-## Economía unitaria
+## Distribución propuesta de la solicitud
 
-Referencia del maestro: presentación de 500 g, precio hipotético $90, costo $61. Para el siguiente ejercicio se supone que los $61 son totalmente variables, sin duplicar indirectos dentro de los $6,000 fijos mensuales. El costo debe recalcularse incluyendo merma y costos del canal.
+| ID | Concepto | Cantidad / duración | Tope unitario MXN | Subtotal MXN | Resultado y condición |
+|---|---|---|---:|---:|---|
+| E01 | Estaciones de desarrollo | 2 equipos | 18,000 | 36,000 | Backend y pruebas locales; sólo si inventario demuestra insuficiencia de laptops existentes |
+| E02 | Dispositivos móviles de prueba | 2 dispositivos | 4,000 | 8,000 | Validar captura y QR en configuraciones diferentes; evitar duplicar dispositivos ya disponibles |
+| E03 | Respaldo eléctrico | 2 unidades | 2,000 | 4,000 | Continuidad de estaciones/red; dimensionar carga y justificar necesidad |
+| E04 | Almacenamiento externo de respaldo | 2 unidades | 1,000 | 2,000 | Copias locales cifradas rotativas, distintas del respaldo remoto |
+| | **Equipamiento** | | | **50,000** | Inventario, custodia y pruebas de aceptación |
+| S01 | Alojamiento de pruebas y piloto | 12 meses | 1,000 | 12,000 | Entornos separados con límites de uso; cotizar configuración |
+| S02 | Copias remotas y almacenamiento de evidencias | 12 meses | 300 | 3,600 | Recuperación fuera del alojamiento principal; evitar servicios duplicados en S01 |
+| S03 | Dominio y correo del proyecto | 1 paquete anual | 1,400 | 1,400 | Identidad y contacto del servicio; TLS gratuito cuando sea viable |
+| S04 | Evaluación externa de seguridad | 1 servicio delimitado | 16,000 | 16,000 | Revisión de acceso entre organizaciones, informe y nueva prueba tras correcciones |
+| S05 | Evaluación externa de usabilidad y accesibilidad | 1 servicio delimitado | 12,000 | 12,000 | Protocolo, cinco sesiones objetivo, hallazgos y revisión de mejoras; sujeto a reclutamiento |
+| | **Servicios** | | | **45,000** | Entregables y conformidad documentados |
+| | **Total solicitado propuesto** | | | **95,000** | Sujeto a cotizaciones y conceptos autorizados |
 
-Contribución = precio neto − costo variable; margen de contribución = contribución/precio. Resultado operativo simplificado = unidades×contribución − costos fijos. No llamar utilidad neta a este resultado: faltan depreciación, financiación e impuestos, además de costos aún no medidos.
+S04 y S05 no pagan programación a integrantes. El equipo implementa correcciones y conserva la responsabilidad técnica. Si el equipo puede ejecutar una evaluación con independencia y evidencia suficientes, deberá justificarse si contratarla agrega valor. No adquirir servicios sólo para completar el monto.
 
-| Escenario hipotético | Precio/unidad | Variable/unidad | Contribución | Margen | Equilibrio mensual, unidades |
-|---|---:|---:|---:|---:|---:|
-| Presión: precio −10%, costo +10% | 81.00 | 67.10 | 13.90 | 17.16% | 432 |
-| Base del maestro | 90.00 | 61.00 | 29.00 | 32.22% | 207 |
-| Favorable: precio +10%, costo sin cambio | 99.00 | 61.00 | 38.00 | 38.38% | 158 |
+## Justificación y evidencia por adquisición
 
-Equilibrio = redondear hacia arriba 6,000/contribución. El margen de contribución no es margen bruto contable hasta clasificar correctamente todos los costos. El precio neto debe descontar comisiones, descuentos y devoluciones; el tratamiento fiscal se validará con contador.
+Para cada renglón preparar: problema, recurso existente, especificación mínima, alternativa de reutilización, dos o tres cotizaciones comparables como control interno, proveedor, impuestos, entrega, garantía, vigencia, concepto oficial al que corresponde y entregable. El número de cotizaciones aquí es una recomendación, no una exigencia atribuida a la convocatoria.
 
-## Flujo mensual de referencia
+E01 puede considerar inicialmente 16 GB de RAM y SSD de 512 GB como perfil de referencia, sin GPU dedicada; comprobar necesidad ejecutando el entorno en las laptops disponibles. No existe evidencia para afirmar todavía que se necesitan dos equipos nuevos. Si las laptops bastan, reducir o reasignar únicamente a necesidades permitidas y comprobadas, según autorización. No inflar importes para alcanzar $95,000.
 
-Hipótesis: 2,000 unidades vendidas de 500 g en 12 meses, equivalentes a 1,000 kg; cobro y pago variables en el mismo mes, sin ingresos SaaS ni subsidios; fijos $6,000 todos los meses. Inversión de arranque $50,000 en M0 y caja operativa inicial $10,000. Los insumos iniciales se consideran reserva no liberada durante esta simplificación; al presupuestar inventarios reales se debe eliminar cualquier doble conteo.
+No se conoce el inventario de laptops. Por ello esta distribución sirve para preparar la solicitud, pero **la justificación definitiva del monto sigue incompleta**. El apoyo puede autorizarse por un monto menor y requerir ajuste conforme a la convocatoria.
 
-| Mes | Unidades | Cobros | Egresos variables | Fijos | Flujo operativo | Caja final sin aporte adicional |
-|---|---:|---:|---:|---:|---:|---:|
-| M1 dic-26 | 0 | 0 | 0 | 6,000 | −6,000 | 4,000 |
-| M2 ene-27 | 0 | 0 | 0 | 6,000 | −6,000 | −2,000 |
-| M3 feb-27 | 0 | 0 | 0 | 6,000 | −6,000 | −8,000 |
-| M4 mar-27 | 50 | 4,500 | 3,050 | 6,000 | −4,550 | −12,550 |
-| M5 abr-27 | 100 | 9,000 | 6,100 | 6,000 | −3,100 | −15,650 |
-| M6 may-27 | 150 | 13,500 | 9,150 | 6,000 | −1,650 | −17,300 |
-| M7 jun-27 | 200 | 18,000 | 12,200 | 6,000 | −200 | −17,500 |
-| M8 jul-27 | 250 | 22,500 | 15,250 | 6,000 | 1,250 | −16,250 |
-| M9 ago-27 | 275 | 24,750 | 16,775 | 6,000 | 1,975 | −14,275 |
-| M10 sep-27 | 300 | 27,000 | 18,300 | 6,000 | 2,700 | −11,575 |
-| M11 oct-27 | 325 | 29,250 | 19,825 | 6,000 | 3,425 | −8,150 |
-| M12 nov-27 | 350 | 31,500 | 21,350 | 6,000 | 4,150 | −4,000 |
-| Total | 2,000 | 180,000 | 122,000 | 72,000 | −14,000 | — |
+## Trabajo y recursos aportados
 
-Necesidad máxima de caja operativa: $27,500 al M7. Los $10,000 previstos dejan brecha de $17,500. Financiación ilustrativa total mínima: $50,000+$27,500=$77,500, antes de costos omitidos y reserva. Los saldos negativos muestran necesidad de financiación; no son una autorización para operar sin recursos. Si se cobran ventas a 30 días, la necesidad cambia y debe recalcularse mensualmente.
+| Recurso | Tratamiento | Pendiente |
+|---|---|---|
+| Programación, documentación y capacitación por los cinco integrantes | Aportación de trabajo; $0 cargado al apoyo | Horas disponibles por persona y valoración económica referencial |
+| Laptops actuales | Aportación de uso, sin compra presunta | Cantidad, especificaciones, propiedad y disponibilidad |
+| Internet, electricidad y lugar de trabajo | No incluidos en la solicitud propuesta | Responsable de cubrirlos, costo incremental y disponibilidad |
+| Contabilidad, obligaciones fiscales y trámites aplicables | No presupuestados por falta de datos | Determinar necesidad, costo y fuente de recursos |
+| Transporte para sesiones presenciales | No incluido | Priorizar remoto, pero estimar desplazamientos indispensables |
 
-## Decisiones financieras
+Estos costos no son cero por estar fuera del apoyo. No se ha confirmado una aportación monetaria adicional. Registrar gasto directo y costo económico del tiempo por separado. El proyecto no puede declararse financieramente viable hasta cubrir los costos indispensables no financiados.
 
-La rampa base no recupera la inversión en el primer año. Se requieren 2,483 unidades anuales para cubrir $72,000 de fijos al margen supuesto, sin recuperar arranque. No se informa ROI o VAN como resultado defendible sin costos completos, vida útil, tasa, impuestos y capital de trabajo. Construir cuenta separada para miel y software; valorar horas aportadas por socios aunque no impliquen salida inmediata de caja.
+## Programación de desembolsos del apoyo
 
-En G1 exigir fuente documentada de capital suficiente y reserva propuesta de 15% sobre egresos aún inciertos. Semanalmente actualizar vencimientos a 13 semanas. Detener nuevas compras si caja comprometida no cubre obligaciones de los próximos 30 días. No financiar crédito a hoteles a costa de pagos vencidos a productores.
+Ejemplo sujeto a reglas de comprobación: equipo $50,000 en M1; servicios S01–S03 $17,000 al inicio si se permiten pagos anuales; S05 $12,000 en M4 tras conseguir usuarios; S04 $16,000 en M5 antes del piloto con información sensible. Total: $95,000. Saldo del apoyo recibido completo: M0 $95,000; M1 $28,000; M4 $16,000; M5 $0. Se separará el dinero comprometido del disponible. No se gastará antes de autorización suponiendo reembolso.
+
+El prototipo previo se realiza con laptops disponibles y herramientas gratuitas o locales. Si éstas no bastan, reducir su complejidad y documentar la limitación; no financiarlo ficticiamente con el apoyo futuro. Los 12 meses de servicio son una hipótesis a verificar frente al periodo de ejecución autorizado.
+
+## Ingresos y continuidad después del apoyo
+
+Clientes potenciales: organizaciones existentes. Modelo por validar: suscripción por organización y servicios de implementación con alcance definido. No hay clientes, ingresos ni tarifa aceptada. La versión gratuita del piloto no cuenta como suscripción pagada.
+
+```text
+Ingreso mensual = organizaciones pagadoras × tarifa neta + servicios efectivamente cobrados
+Contribución mensual = ingreso − costos variables por organización − costos variables de servicios
+Resultado económico = contribución − costos fijos − valor del trabajo aportado − depreciación
+Equilibrio recurrente = techo(costos fijos / (tarifa neta − costo variable por organización))
+```
+
+Ejemplo exclusivamente de sensibilidad: fijos $3,000/mes, tarifa $600 y costo variable $100 ⇒ 6 organizaciones pagadoras para equilibrio de caja simplificado. Con tarifa $400 ⇒ 10; con tarifa $800 ⇒ 5. Estos parámetros no proceden de entrevistas y excluyen remuneración futura, impuestos y depreciación. No prueban rentabilidad integral ni aseguran cubrir a cinco personas.
+
+Escenario sin clientes: ingresos $0; identificar cómo sostener las obligaciones no prepagadas. Antes de agotar servicios financiados, decidir renovación con cobros reales, aportaciones expresas o cierre ordenado con exportación de datos. No se presume otro subsidio.
