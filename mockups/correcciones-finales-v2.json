@@ -1,0 +1,44 @@
+[
+  {
+    "key": "P03-principal-mobile",
+    "input": "imgs/v2/P03-principal-mobile-r2.png",
+    "file": "imgs/v2/P03-principal-mobile-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY: replace 'En camino a la organización.' under Enviada with 'Registro remitido para revisión.' Add small context line 'Mi producción · Productor Demo 01' above Mis entregas, replacing standalone Espacio. This state indicates a submitted record, not physical shipment. Preserve100kg received and0kg own. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "O05-principal-desktop",
+    "input": "imgs/v2/O05-principal-desktop-r2.png",
+    "file": "imgs/v2/O05-principal-desktop-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY the Pedido cell in the FIRST table row (Entrada ENT-0001 +100kg): replace PED-0001 with an em dash '—'. Reception is NOT associated with sales order. SECOND row SAL-0001 -20kg retains PED-0001. Preserve all amounts/layout. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "V04-principal-desktop",
+    "input": "imgs/v2/V04-principal-desktop-r2.png",
+    "file": "imgs/v2/V04-principal-desktop-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY bottom panel heading 'Disponibilidad del producto' to 'Resultado previsto al confirmar'. Add small neutral text 'Disponible ahora: 100.00 kg. El borrador todavía no reserva existencias.' Above the100physical20committed80available figures. These figures are a preview AFTER future confirmation, not current state. Keep all controls,40units500g90MXN3600MXN and layout. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "V05-principal-desktop",
+    "input": "imgs/v2/V05-principal-desktop-r2.png",
+    "file": "imgs/v2/V05-principal-desktop-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY 'Preparar 20 unidades' to 'Preparar 40 unidades · 20.00 kg'. This is COMPLETE dispatch of40 units each500g=20kg, not a partial dispatch. Preserve before100/20/80 and after80/0/80kg, all layout. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "G01-principal-desktop",
+    "input": "imgs/v2/G01-principal-desktop-r2.png",
+    "file": "imgs/v2/G01-principal-desktop-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY first row label of lower permissions matrix 'Gestionar producción y lotes' to 'Gestionar preferencias del espacio'. Keep checked Admin Demo in this row and all other rows as they are. No changes to layout or other text. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "G02-principal-desktop",
+    "input": "imgs/v2/G02-principal-desktop-r2.png",
+    "file": "imgs/v2/G02-principal-desktop-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY sidebar active state: Equipo y permisos must be unselected normal; Preferencias y ayuda must be selected with palegreen background and left darkgreen indicator. Preserve all content and layout. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  },
+  {
+    "key": "C02-principal-mobile",
+    "input": "imgs/v2/C02-principal-mobile-r2.png",
+    "file": "imgs/v2/C02-principal-mobile-r3.png",
+    "prompt": "Use case: ui-mockup. Precise correction of supplied screen. Change ONLY remove the green 'Escenario alternativo' badge (this is editorial, not a real app control) and remove bottom global navigation as this view contains a draft form. Preserve all100kg provisional values and other layout. Keep all other elements, aspect ratio and design unchanged. No new warnings."
+  }
+]

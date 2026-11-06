@@ -1,0 +1,32 @@
+[
+  {
+    "key": "G01-pendiente-desktop",
+    "input": "imgs/v2/G01-principal-desktop-r2.png",
+    "prompt": "Use this TEAM AND PERMISSIONS screen as reference. Create its INVITATION PENDING variant. Preserve header, sidebar, ivory/white/green design. Header logged-in person Admin Demo. Main title Equipo y permisos. Replace ALL main content with a single invitation detail white card: title Invitación pendiente; name Comercial Demo; email comercial@ejemplo.invalid; espacio Organización Demo del Mayab; alcance Clientes, pedidos y cobros. Amber status Invitación pendiente. Neutral explanation Todavía no tiene acceso activo. Actions Reenviar invitación (green) and Cancelar invitación (outline). Remove permission matrix, lot review forms and all lot data. No errors. This is ADMIN managing an invitation, not invited user logged in.",
+    "file": "imgs/v2/G01-pendiente-desktop-r3.png"
+  },
+  {
+    "key": "C03a-error-desktop",
+    "input": "imgs/v2/C03a-error-desktop-r2.png",
+    "prompt": "Change ONLY the Periodo field value from01oct2026–31oct2026 to '05 nov 2026 — 05 nov 2026'. Preserve100kg entries20kg exits80kg stock, failed export alert, retry and all layout.",
+    "file": "imgs/v2/C03a-error-desktop-r3.png"
+  },
+  {
+    "key": "O06-archivo-fallido-desktop",
+    "input": "imgs/v2/O06-archivo-fallido-desktop-r2.png",
+    "prompt": "Change ONLY bottom-right Guardar evidencia button to disabled light gray with dark muted text. File upload failed so final save cannot proceed. Keep Reintentar carga enabled green. Add concise text 'Completa la carga antes de guardar'. Preserve file and ENT-0001 and all other layout.",
+    "file": "imgs/v2/O06-archivo-fallido-desktop-r3.png"
+  },
+  {
+    "key": "A02-vacío-desktop",
+    "input": "imgs/v2/A02-vacío-desktop-r2.png",
+    "prompt": "Change ONLY main title 'Selecciona tu organización' to 'Elige tu espacio de trabajo'. Change header 'Espacio: Seleccionar organización' to 'Seleccionar espacio'. Preserve all neutral empty state, independent workspace and invitation buttons.",
+    "file": "imgs/v2/A02-vacío-desktop-r3.png"
+  },
+  {
+    "key": "G02-confirmacion-desktop",
+    "input": "imgs/v2/G02-principal-desktop-r2.png",
+    "prompt": "Use this PREFERENCES screen as reference. Make its unsaved-changes dialog variant. Preserve actual preferences fields organization, language,timezone and units. Select Preferencias y ayuda in sidebar, not Equipo. Add centered white dialog over softly dimmed background with title 'Cambios sin guardar', body '¿Quieres guardar los cambios antes de salir?', buttons 'Seguir editando' outlined with visible dark focus ring, 'Descartar cambios' red text, 'Guardar y salir' dark green. Preserve layout behind dialog. No new fields, lot name, frequency or unrelated settings. No errors or yellow banners.",
+    "file": "imgs/v2/G02-confirmacion-desktop-r3.png"
+  }
+]
